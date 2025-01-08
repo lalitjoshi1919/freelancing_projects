@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Collection Input and Reload -->
+    <div class="section">
+      <input type="text" id="collectionName" placeholder="Enter Collection Name">
+      <button id="reloadBtn">Reload</button>
+    </div>
+
+    <!-- Collection List -->
+    <div class="section" id="collectionListSection" style="display: none;">
+      <h2>Collection Items</h2>
+      <div id="collectionList"></div>
+    </div>
+
+    <!-- Upload and Query Section -->
+    <div class="section" id="uploadQuerySection" style="display: none;">
+      <h2>Upload a PDF</h2>
+      <input type="file" id="fileInput">
+      <button id="uploadBtn">Upload</button>
+
+      <h2>Query Collection</h2>
+      <input type="text" id="queryInput" placeholder="Enter Query">
+      <button id="queryBtn">Query Collection</button>
+    </div>
+
+    <!-- Server Response -->
+    <div class="section">
+      <h2>Server Response</h2>
+      <textarea id="serverResponse" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
